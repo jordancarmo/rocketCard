@@ -1,0 +1,124 @@
+:root {
+  --bg: #000000;
+  --bg-card: #0e1218;
+  --text: #f1f1f1;
+  --img-profile: #8257e5;
+  --buttons: #fff;
+  --border-button: #1a1a1a;
+}
+
+* {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-card);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: var(--bg);
+  width: 400px;
+  height: 80vh;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.inside-box {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 370px;
+  height: 75vh;
+  border-radius: 50px 50px 50px 50px;
+  background-color: var(--bg-card);
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+  margin-top: 2px;
+  align-items: center;
+  width: 100%;
+}
+
+.header .header-container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.logo-header {
+  margin-left: 4px;
+  max-width: 80%;
+}
+
+#avatar {
+  position: absolute;
+  right: -70px;
+  top: -240px;
+  height: 350px;
+  border: 9px solid #8257e5;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.info-box {
+  margin-top: 220px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.info-list {
+  background: rgb(89, 89, 89);
+  background: linear-gradient(
+    0deg,
+    rgba(89, 89, 89, 0.6337885495995272) 0%,
+    rgba(84, 82, 82, 0.6646008745294993) 57%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border-radius: 25px;
+  color: white;
+  padding: 15px;
+  width: 50%;
+  z-index: 100;
+}
+
+.info-list img {
+  background-color: transparent;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer .logo-footer {
+  margin-right: 10px;
+  width: 30px;
+}
